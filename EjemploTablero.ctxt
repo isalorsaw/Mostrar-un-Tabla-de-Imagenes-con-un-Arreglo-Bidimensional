@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=EjemploTablero
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=imgs\ m
+comment2.target=void\ cargarImagenes(javax.swing.ImageIcon[][],\ int[][])
+comment3.params=m
+comment3.target=void\ imprimir(int[][])
+comment4.params=msg
+comment4.target=void\ mostrar(java.lang.String)
+comment5.params=m\ d\ h
+comment5.target=void\ llenarAleatorio(int[][],\ int,\ int)
+comment6.params=d\ h
+comment6.target=int\ generaAleatorio(int,\ int)
+comment6.text=static\ void\ cargarImagenes(ImageIcon[][]\ arr,\ int\ f,\ int\ c)\ \r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ for\ (int\ i\ \=\ 0;\ i\ <\ f;\ i++)\ \r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ for\ (int\ j\ \=\ 0;\ j\ <\ c;\ j++)\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ //arr[i][j]\ \=\ new\ ImageIcon("imagenes/img_"\ +\ i\ +\ "_"\ +\ j\ +\ ".png");\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ int\ alea\=generaAleatorio(1,9);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ arr[i][j]\ \=\ new\ ImageIcon("imagenes/"+alea+\ ".jpg");\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n}
+comment7.params=arr\ f\ c
+comment7.target=void\ mostrarTablero(javax.swing.ImageIcon[][],\ int,\ int)
+comment7.text=static\ void\ mostrarTablero(ImageIcon[][]\ arr,\ int\ f,\ int\ c)\ \r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ JPanel\ panel\ \=\ new\ JPanel(new\ GridLayout(f,\ c));\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ for\ (int\ i\ \=\ 0;\ i\ <\ f;\ i++)\ \r\n\ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ for\ (int\ j\ \=\ 0;\ j\ <\ c;\ j++)\ \r\n\ \ \ \ \ \ \ \ \ \ \ \ {\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ JLabel\ label\ \=\ new\ JLabel(arr[i][j]);\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ label.setBorder(BorderFactory.createLineBorder(Color.BLACK));\r\n\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ panel.add(label);\r\n\ \ \ \ \ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ }\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ JOptionPane.showMessageDialog(null,\ panel,\ "Mi\ Tablero",\ JOptionPane.PLAIN_MESSAGE);\r\n}
+numComments=8
